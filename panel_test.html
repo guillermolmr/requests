@@ -8,8 +8,8 @@
       </tr>
       <tr>
         <td>1</td>
-        <td>2</td>
-        <td>3</td>
+        <td><button onclick="myFunction()">Click me</button></td>
+        <td id="demo">3</td>
         <td>4</td>
       </tr>
       <tr>
@@ -34,7 +34,7 @@
         margin:0 auto;
         width: 1646px;
         height: 550px ;
-        opacity:0.5;
+        opacity:0.85;
     
     }
 
@@ -47,3 +47,16 @@
         color:white;
     }
   </style>
+
+
+
+
+<p ></p>
+
+<script>
+    var clicks=0;
+function myFunction() {
+    clicks++;
+  document.getElementById("demo").innerHTML = "Clicks: "+clicks;
+}
+</script>
